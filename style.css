@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wyatt Davis | Artist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <h1>Wyatt Davis</h1>
+    <p>Music. Movement. Meaning.</p>
+    <nav>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</body>
+</html>
+✅ style.css
+css
+Copy
+Edit
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background gif */
+body {
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Semi-transparent overlay to make text pop */
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Headline */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+  border-color: white;
+}
