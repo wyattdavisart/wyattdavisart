@@ -108,3 +108,20 @@ nav a:hover {
     width: 90%;
   }
 }
+.listen-links {
+  margin-top: 2rem;
+}
+
+.listen-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.listen-links a:hover {
+  border-color: white;
+}
