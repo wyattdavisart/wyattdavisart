@@ -1,3 +1,58 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background gif */
+body {
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Semi-transparent overlay to make text pop */
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Headline */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+  border-color: white;
+}
+
+
 .signup-form {
   margin-top: 2rem;
 }
