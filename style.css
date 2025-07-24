@@ -11,19 +11,21 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Bell MT', serif;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-/* Semi-transparent overlay to make text pop */
+/* Semi-transparent overlay to make text readable */
 .overlay {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent */
   padding: 2rem;
   border-radius: 1rem;
+  max-width: 90%;
+  width: 600px;
 }
 
 /* Headline */
@@ -39,6 +41,10 @@ p {
 }
 
 /* Navigation links */
+nav {
+  margin-bottom: 2rem;
+}
+
 nav a {
   color: white;
   text-decoration: none;
@@ -52,17 +58,25 @@ nav a:hover {
   border-color: white;
 }
 
-
+/* Mailing list form */
 .signup-form {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+.signup-form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .signup-form input {
   padding: 0.5rem;
   border: none;
   border-radius: 4px;
-  width: 200px;
-  margin-right: 0.5rem;
+  width: 70%;
+  max-width: 300px;
+  margin: 0.5rem auto;
+  display: block;
 }
 
 .signup-form button {
@@ -73,10 +87,24 @@ nav a:hover {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.signup-form label {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  display: block;
+.signup-form button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive text on small screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p, nav a, .signup-form label {
+    font-size: 1rem;
+  }
+
+  .signup-form input {
+    width: 90%;
+  }
 }
