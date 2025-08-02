@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule – Wyatt Davis</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listen.html">Listen</a></li>
+        <li><a href="schedule.html" class="active">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Upcoming Shows</h1>
+      <p>No shows announced yet — check back soon!</p>
+
+      <!-- Future structure for events -->
+      <!--
+      <ul class="show-list">
+        <li>
+          <strong>Aug 24, 2025</strong> – The Echo, Los Angeles, CA<br />
+          <a href="https://ticketsite.com/show-link">Tickets</a>
+        </li>
+        <li>
+          <strong>Sept 15, 2025</strong> – Sofar Sounds, San Diego, CA<br />
+          <a href="https://ticketsite.com/show-link">Tickets</a>
+        </li>
+      </ul>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© Wyatt Davis – All rights reserved</p>
+  </footer>
+</body>
+</html>
