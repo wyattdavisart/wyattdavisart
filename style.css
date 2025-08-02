@@ -58,6 +58,16 @@ nav a:hover {
   border-color: white;
 }
 
+.show-list {
+  list-style: none;
+  padding: 0;
+}
+
+.show-list li {
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
 /* Mailing list form */
 .signup-form {
   margin-top: 1.5rem;
