@@ -136,14 +136,24 @@ nav a:hover {
   border-color: white;
 }
 
-.schedule-page.content {
-  background: none; /* Remove the default white background */
+.schedule-page {
+  background: none; /* Let body background show */
+  color: #f5f5f5;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto; /* Centers the content */
+}
+
+.schedule-page p {
+  text-align: left; /* Or center if you want */
+  margin-bottom: 2rem;
+}
+
+.schedule-page a {
+  color: #f5f5f5;
 }
 
 .schedule-page a:hover {
-  color: #fff; /* pure white on hover */
+  color: white;
 }
 
-.schedule-page h1 {
-  color: #fff; /* pure white for the heading */
-}
