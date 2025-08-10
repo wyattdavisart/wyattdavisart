@@ -5,36 +5,44 @@
   box-sizing: border-box;
 }
 
-/* Full-screen background gif */
+/* Full-screen background gif for all pages */
 body {
   background: url('musicforwebsites.gif') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
   font-family: 'Bell MT', serif;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center main content */
+main {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
   text-align: center;
 }
 
 /* Semi-transparent overlay to make text readable */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* dark transparent */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 1rem;
   max-width: 90%;
-  width: 600px;
+  width: 800px;
 }
 
 /* Headline */
 h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
-/* Subheading */
+/* Subheading & paragraphs */
 p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
@@ -42,13 +50,23 @@ p {
 
 /* Navigation links */
 nav {
-  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
   font-weight: bold;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -58,6 +76,7 @@ nav a:hover {
   border-color: white;
 }
 
+/* Show list formatting */
 .show-list {
   list-style: none;
   padding: 0;
@@ -104,6 +123,32 @@ nav a:hover {
   background-color: #ddd;
 }
 
+/* Listen & schedule links */
+.listen-links, .schedule-links {
+  margin-top: 2rem;
+}
+
+.listen-links a, .schedule-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.listen-links a:hover, .schedule-links a:hover {
+  border-color: white;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
 /* Responsive text on small screens */
 @media (max-width: 600px) {
   h1 {
@@ -118,42 +163,3 @@ nav a:hover {
     width: 90%;
   }
 }
-.listen-links {
-  margin-top: 2rem;
-}
-
-.listen-links a {
-  display: inline-block;
-  margin: 0.5rem;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.listen-links a:hover {
-  border-color: white;
-}
-
-.schedule-page {
-  background: none; /* Let body background show */
-  color: #f5f5f5;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto; /* Centers the content */
-}
-
-.schedule-page p {
-  text-align: left; /* Or center if you want */
-  margin-bottom: 2rem;
-}
-
-.schedule-page a {
-  color: #f5f5f5;
-}
-
-.schedule-page a:hover {
-  color: white;
-}
-
