@@ -14,8 +14,8 @@ header-logo {
 }
 
 /* Make header and subheader images responsive */
-.header-logo,
-.subheader-img {
+header-logo,
+subheader-img {
   display: block;
   width: 100%;
   max-width: 400px; /* adjust size for your header */
@@ -24,24 +24,24 @@ header-logo {
 }
 
 /* Smaller subheader image */
-.subheader-img {
+subheader-img {
   max-width: 280px; /* slightly smaller than header */
   margin-bottom: 2rem;
 }
 
 /* Optional: responsive adjustments for mobile */
 @media (max-width: 480px) {
-  .header-logo {
+  header-logo {
     max-width: 280px;
   }
 
-  .subheader-img {
+  subheader-img {
     max-width: 200px;
   }
 }
 
 /* Optional: center everything in the overlay */
-.overlay {
+overlay {
   text-align: center;
 }
 
