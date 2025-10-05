@@ -8,8 +8,8 @@
 .header-logo {
   display: block;
   max-width: 10px; /* adjust as needed */
-  height: auto;
-  margin: 0 auto;
+  height: 10;
+  margin: 10;
 }
 
 /* Full-screen background gif for all pages */
