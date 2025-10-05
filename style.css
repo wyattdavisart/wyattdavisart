@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-.header-logo {
+header-logo {
   display: block;
-  max-width: 400px; /* adjust as needed */
+  max-width: 100px; /* adjust as needed */
   height: auto;
   margin: 0 auto;
 }
