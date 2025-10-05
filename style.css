@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+.header-logo {
+  display: block;
+  max-width: 400px; /* adjust as needed */
+  height: auto;
+  margin: 0 auto;
+}
+
 /* Full-screen background gif for all pages */
 body {
   background: url('musicforwebsites.gif') no-repeat center center fixed;
