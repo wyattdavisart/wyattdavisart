@@ -13,13 +13,38 @@ header-logo {
   margin: 0 auto;
 }
 
-subheader-img {
+/* Make header and subheader images responsive */
+.header-logo,
+.subheader-img {
   display: block;
   width: 100%;
-  max-width: 250px; /* adjust as needed */
+  max-width: 400px; /* adjust size for your header */
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto; /* centers + adds space below */
 }
+
+/* Smaller subheader image */
+.subheader-img {
+  max-width: 280px; /* slightly smaller than header */
+  margin-bottom: 2rem;
+}
+
+/* Optional: responsive adjustments for mobile */
+@media (max-width: 480px) {
+  .header-logo {
+    max-width: 280px;
+  }
+
+  .subheader-img {
+    max-width: 200px;
+  }
+}
+
+/* Optional: center everything in the overlay */
+.overlay {
+  text-align: center;
+}
+
 
 /* Full-screen background gif for all pages */
 body {
