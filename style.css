@@ -13,6 +13,14 @@ header-logo {
   margin: 0 auto;
 }
 
+subheader-img {
+  display: block;
+  width: 100%;
+  max-width: 250px; /* adjust as needed */
+  height: auto;
+  margin: 0 auto;
+}
+
 /* Full-screen background gif for all pages */
 body {
   background: url('musicforwebsites.gif') no-repeat center center fixed;
