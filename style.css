@@ -18,7 +18,7 @@ subheader-img {
 /* Smaller subheader image */
 subheader-img {
   max-width: 100px; /* slightly smaller than header */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Optional: responsive adjustments for mobile */
