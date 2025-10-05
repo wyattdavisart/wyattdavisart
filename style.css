@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-header-logo {
-  display: block;
-  width: 100%;
-  max-width: 400px; /* the largest you want it to appear */
-  height: auto;
-  margin: 0 auto;
-}
-
 /* Make header and subheader images responsive */
 header-logo,
 subheader-img {
@@ -25,7 +17,7 @@ subheader-img {
 
 /* Smaller subheader image */
 subheader-img {
-  max-width: 280px; /* slightly smaller than header */
+  max-width: 100px; /* slightly smaller than header */
   margin-bottom: 2rem;
 }
 
@@ -36,7 +28,7 @@ subheader-img {
   }
 
   subheader-img {
-    max-width: 200px;
+    max-width: 100px;
   }
 }
 
