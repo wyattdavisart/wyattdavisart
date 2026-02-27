@@ -50,7 +50,7 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  -style: none;
 }
 
 nav li {
@@ -109,15 +109,15 @@ p {
 }
 
 /* ============================= */
-/* LISTS */
+/* S */
 /* ============================= */
 
-.show-list {
-  list-style: none;
+.show- {
+  -style: none;
   padding: 0;
 }
 
-.show-list li {
+.show- li {
   margin-bottom: 1.2rem;
   font-size: 1rem;
 }
@@ -165,12 +165,12 @@ p {
 /* LINKS SECTIONS */
 /* ============================= */
 
-.listen-links,
+.en-links,
 .schedule-links {
   margin-top: 2rem;
 }
 
-.listen-links a,
+.en-links a,
 .schedule-links a {
   display: inline-block;
   margin: 0.5rem;
@@ -181,7 +181,7 @@ p {
   transition: border-color 0.3s ease;
 }
 
-.listen-links a:hover,
+.en-links a:hover,
 .schedule-links a:hover {
   border-color: white;
 }
@@ -240,4 +240,18 @@ footer {
 
 .release h1 {
   margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* Event Page */
+/* ============================= */
+
+
+
+.event {
+  margin-bottom: 4rem;
+}
+
+.event-date {
+  margin-bottom: 0.5rem;
 }
