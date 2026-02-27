@@ -269,3 +269,14 @@ overlay {
     top: 15%;
   }
 }
+/* ============================= */
+/* Event */
+/* ============================= */
+
+.event {
+  margin-bottom: 4rem;
+}
+
+.event-date {
+  margin-bottom: 0.5rem;
+}
