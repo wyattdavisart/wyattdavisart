@@ -251,8 +251,8 @@ footer {
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  max-width: 70%;
+  width: 400px;
+  max-width: 100%;
   opacity: 0.25;
   pointer-events: none; /* allows clicks through it */
   z-index: 0;
