@@ -265,7 +265,7 @@ overlay {
 
 @media (max-width: 600px) {
   .floating-image {
-    width: 60px;
+    width: 400px;
     top: 15%;
   }
 }
