@@ -1,44 +1,17 @@
-/* Reset default styles */
+/* ============================= */
+/* RESET */
+/* ============================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make header and subheader images responsive */
-header-logo,
-subheader-img {
-  display: block;
-  width: 100%;
-  max-width: 400px; /* adjust size for your header */
-  height: auto;
-  margin: 0 auto 1rem auto; /* centers + adds space below */
-}
+/* ============================= */
+/* BODY + BACKGROUND */
+/* ============================= */
 
-/* Smaller subheader image */
-subheader-img {
-  max-width: 100px; /* slightly smaller than header */
-  margin-bottom: 1rem;
-}
-
-/* Optional: responsive adjustments for mobile */
-@media (max-width: 480px) {
-  header-logo {
-    max-width: 280px;
-  }
-
-  subheader-img {
-    max-width: 100px;
-  }
-}
-
-/* Optional: center everything in the overlay */
-overlay {
-  text-align: center;
-}
-
-
-/* Full-screen background gif for all pages */
 body {
   background: url('musicforwebsites.gif') no-repeat center center fixed;
   background-size: cover;
@@ -49,42 +22,30 @@ body {
   flex-direction: column;
 }
 
-/* Center main content */
-main {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
+/* ============================= */
+/* HEADER IMAGES */
+/* ============================= */
+
+.header-logo,
+.subheader-img {
+  display: block;
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto 1rem auto;
 }
 
-/* Semi-transparent overlay to make text readable */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 90%;
-  width: 800px;
+.subheader-img {
+  max-width: 120px;
 }
 
-/* Headline */
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
+/* ============================= */
+/* NAVIGATION (MOBILE FIRST) */
+/* ============================= */
 
-/* Subheading & paragraphs */
-p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Navigation links */
 nav {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -93,14 +54,14 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-  margin: 2rem;
+  margin: 0.75rem 0;   /* vertical stack on mobile */
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -109,18 +70,62 @@ nav a:hover {
   border-color: white;
 }
 
-/* Show list formatting */
+/* ============================= */
+/* MAIN LAYOUT */
+/* ============================= */
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Overlay for readability */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* ============================= */
+/* TYPOGRAPHY */
+/* ============================= */
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* LISTS */
+/* ============================= */
+
 .show-list {
   list-style: none;
   padding: 0;
 }
 
 .show-list li {
-  margin-bottom: 1.5em;
-  font-size: 1.1em;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
 }
 
-/* Mailing list form */
+/* ============================= */
+/* SIGNUP FORM */
+/* ============================= */
+
 .signup-form {
   margin-top: 1.5rem;
 }
@@ -132,17 +137,17 @@ nav a:hover {
 }
 
 .signup-form input {
-  padding: 0.5rem;
+  padding: 0.6rem;
   border: none;
   border-radius: 4px;
-  width: 70%;
-  max-width: 300px;
+  width: 100%;
+  max-width: 320px;
   margin: 0.5rem auto;
   display: block;
 }
 
 .signup-form button {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   background-color: white;
   color: black;
   border: none;
@@ -156,12 +161,17 @@ nav a:hover {
   background-color: #ddd;
 }
 
-/* Listen & schedule links */
-.listen-links, .schedule-links {
+/* ============================= */
+/* LINKS SECTIONS */
+/* ============================= */
+
+.listen-links,
+.schedule-links {
   margin-top: 2rem;
 }
 
-.listen-links a, .schedule-links a {
+.listen-links a,
+.schedule-links a {
   display: inline-block;
   margin: 0.5rem;
   color: white;
@@ -171,28 +181,47 @@ nav a:hover {
   transition: border-color 0.3s ease;
 }
 
-.listen-links a:hover, .schedule-links a:hover {
+.listen-links a:hover,
+.schedule-links a:hover {
   border-color: white;
 }
 
-/* Footer */
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
 footer {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 1rem;
 }
 
-/* Responsive text on small screens */
-@media (max-width: 600px) {
+/* ============================= */
+/* DESKTOP ENHANCEMENTS */
+/* ============================= */
+
+@media (min-width: 768px) {
+
   h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 
-  p, nav a, .signup-form label {
-    font-size: 1rem;
+  p {
+    font-size: 1.2rem;
   }
 
-  .signup-form input {
-    width: 90%;
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
+
+  nav li {
+    margin: 0;
+  }
+
+  .overlay {
+    padding: 3rem;
+  }
+
 }
