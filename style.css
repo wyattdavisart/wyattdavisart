@@ -263,7 +263,7 @@ html {
 /* Overlay (CONTENT ABOVE SIGIL) */
 /* ============================= */
 
-.overlay {
+/* .overlay {
   position: relative;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.55);
