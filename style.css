@@ -29,6 +29,10 @@ body {
 nav {
   background: rgba(0, 0, 0, 0.6);
   padding: 1.5rem;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .nav ul {
@@ -51,6 +55,24 @@ nav {
 
 .nav a:hover {
   border-color: white;
+}
+
+/* spacing between items */
+nav p {
+  margin: 0.8rem 0;
+}
+
+/* link styling */
+nav a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.6;
 }
 
 /* ============================= */
@@ -79,6 +101,10 @@ main {
 /* Center the events page content */
 .overlay {
   text-align: center;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
 }
 
 /* Center the event list */
