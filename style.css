@@ -23,41 +23,24 @@ body {
 }
 
 /* ============================= */
-/* HEADER IMAGES */
-/* ============================= */
-
-.header-logo,
-.subheader-img {
-  display: block;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  margin: 0 auto 1rem auto;
-}
-
-.subheader-img {
-  max-width: 120px;
-}
-
-/* ============================= */
-/* NAVIGATION (MOBILE FIRST) */
+/* NAVIGATION */
 /* ============================= */
 
 nav {
   background: rgba(0, 0, 0, 0.6);
   padding: 1.5rem;
+}
+
+.nav ul {
+  list-style: none;
   text-align: center;
 }
 
-nav ul {
-  -style: none;
+.nav li {
+  margin: 0.75rem 0;
 }
 
-nav li {
-  margin: 0.75rem 0;   /* vertical stack on mobile */
-}
-
-nav a {
+.nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -66,277 +49,83 @@ nav a {
   transition: border-color 0.3s ease;
 }
 
-nav a:hover {
+.nav a:hover {
   border-color: white;
 }
 
 /* ============================= */
-/* MAIN LAYOUT */
+/* MAIN */
 /* ============================= */
 
 main {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 2rem 1rem;
-  text-align: center;
 }
 
-/* Overlay for readability */
+/* ============================= */
+/* TEXT SECTIONS (SINGLE COLUMN) */
+/* ============================= */
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 100%;
+.text {
   max-width: 700px;
-}
-
-/* ============================= */
-/* TYPOGRAPHY */
-/* ============================= */
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-
-/* ============================= */
-/* S */
-/* ============================= */
-
-.show- {
-  -style: none;
-  padding: 0;
-}
-
-.show- li {
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-}
-
-/* ============================= */
-/* SIGNUP FORM */
-/* ============================= */
-
-.signup-form {
-  margin-top: 1.5rem;
-}
-
-.signup-form label {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.signup-form input {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 320px;
-  margin: 0.5rem auto;
-  display: block;
-}
-
-.signup-form button {
-  padding: 0.6rem 1.2rem;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.signup-form button:hover {
-  background-color: #ddd;
-}
-
-/* ============================= */
-/* LINKS SECTIONS */
-/* ============================= */
-
-.en-links,
-.schedule-links {
-  margin-top: 2rem;
-}
-
-.en-links a,
-.schedule-links a {
-  display: inline-block;
-  margin: 0.5rem;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.en-links a:hover,
-.schedule-links a:hover {
-  border-color: white;
-}
-
-/* ============================= */
-/* FOOTER */
-/* ============================= */
-
-footer {
-  background: rgba(0, 0, 0, 0.6);
+  margin: 60px auto;
+  padding: 0 20px;
   text-align: center;
-  padding: 1rem;
-}
 
-/* ============================= */
-/* DESKTOP ENHANCEMENTS */
-/* ============================= */
-
-@media (min-width: 768px) {
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  nav li {
-    margin: 0;
-  }
-
-  .overlay {
-    padding: 3rem;
-  }
-
-}
-
-.release {
-  margin-bottom: 3rem;
-}
-
-.release-art {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.release h1 {
-  margin-bottom: 1rem;
-}
-
-/* ============================= */
-/* Floating Image */
-/* ============================= */
-
-.floating-image {
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  max-width: 80%;
-  opacity: 0.25;
-  pointer-events: none; /* allows clicks through it */
-  z-index: 0;
-}
-
-overlay {
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 600px) {
-  .floating-image {
-    width: 400px;
-    top: 15%;
-  }
-}
-/* ============================= */
-/* Event */
-/* ============================= */
-
-.event {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-
-}
-
-.text {
-  margin-bottom: 3rem;
-}
-
-.text-art {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.text h1 {
-  margin-bottom: 1rem;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Base layout spacing */
-.text {
-  margin: 80px auto;
-  max-width: 900px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
   opacity: 0;
   transform: translateY(60px);
 }
 
-/* Images */
+/* ============================= */
+/* IMAGES */
+/* ============================= */
+
 .text-art {
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
   border-radius: 12px;
 }
 
-/* Text block */
+/* ============================= */
+/* TEXT CONTENT */
+/* ============================= */
+
 .event-details {
-  width: 60%;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
-/* Alternating layout (image left/right) */
-.text:nth-child(even) {
-  flex-direction: row-reverse;
+.event-details p {
+  margin-bottom: 16px;
 }
 
-/* Animation when visible */
+/* ============================= */
+/* EPK LINK */
+/* ============================= */
+
+.epk-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+
+/* ============================= */
+/* ANIMATION */
+/* ============================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .text.show {
-  animation: floatBounce 1.2s cubic-bezier(0.25, 1.5, 0.5, 1) forwards;
+  animation: floatBounce 1.2s cubic-bezier(0.25, 1.5, 0.5, 1) forwards,
+             idleFloat 5s ease-in-out infinite 1.2s;
 }
 
-/* Keyframes for float + bounce */
 @keyframes floatBounce {
   0% {
     opacity: 0;
@@ -352,5 +141,41 @@ html {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes idleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ============================= */
+/* DESKTOP */
+/* ============================= */
+
+@media (min-width: 768px) {
+
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav li {
+    margin: 0;
+  }
+
+  .event-details {
+    font-size: 1.1rem;
   }
 }
