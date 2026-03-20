@@ -150,6 +150,36 @@ html {
 }
 
 /* ============================= */
+/* Floating Sigil (Background Element) */
+/* ============================= */
+
+.floating-image {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  max-width: 80%;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================= */
+/* Overlay (CONTENT ABOVE SIGIL) */
+/* ============================= */
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* ============================= */
 /* FOOTER */
 /* ============================= */
 
