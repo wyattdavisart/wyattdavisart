@@ -80,6 +80,23 @@ main {
 /* IMAGES */
 /* ============================= */
 
+/* Header + Subheader sizing */
+.header-logo {
+  max-width: 320px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.subheader-img {
+  max-width: 260px;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
 .text-art {
   width: 100%;
   max-width: 600px;
