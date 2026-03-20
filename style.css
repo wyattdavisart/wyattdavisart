@@ -165,6 +165,15 @@ html {
   z-index: 0;
 }
 
+@keyframes sigilFloat {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -20px); }
+}
+
+.floating-image {
+  animation: sigilFloat 8s ease-in-out infinite;
+}
+
 /* ============================= */
 /* Overlay (CONTENT ABOVE SIGIL) */
 /* ============================= */
