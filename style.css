@@ -105,7 +105,26 @@ main {
   margin: 0 auto 1rem auto;
   border-radius: 12px;
 }
+/* Release images (Listen page) */
+.release-art {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  opacity: 0.95;
+}
+.release {
+  position: relative;
+  margin: 3rem auto;
+  text-align: center;
+}
 
+/* Optional subtle floating effect */
+.release-art {
+  position: relative;
+  z-index: 1;
+}
 /* ============================= */
 /* TEXT CONTENT */
 /* ============================= */
