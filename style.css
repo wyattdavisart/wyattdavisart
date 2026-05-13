@@ -323,7 +323,7 @@ footer {
 }
 
 .nav-icon {
-  width: 35px;  /* Adjust this number to get the perfect size */
+  width: 50px;  /* Adjust this number to get the perfect size */
   height: auto; /* Keeps the proportions from distorting */
   display: inline-block;
   vertical-align: middle;
