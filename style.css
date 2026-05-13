@@ -321,3 +321,21 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+  opacity: 0.85;
+  transition: 0.2s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
