@@ -87,6 +87,11 @@ nav a:hover {
   opacity: 1;
   transform: scale(1.08);
 }
+
+.social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
 /* ============================= */
 /* MAIN */
 /* ============================= */
