@@ -321,3 +321,17 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+.nav-icon {
+  width: 150px; /* Adjust width to fit your design */
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.nav-icon:hover {
+  opacity: 0.8; /* Subtle feedback when hovering */
+}
+
+nav p {
+  margin: 10px 0; /* Adjust spacing between the icons */
+}
