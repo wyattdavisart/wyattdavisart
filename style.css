@@ -323,9 +323,10 @@ footer {
 }
 
 .nav-icon {
-  width: 150px; /* Adjust width to fit your design */
-  height: auto;
-  transition: opacity 0.3s ease;
+  width: 45px;  /* Adjust this number to get the perfect size */
+  height: auto; /* Keeps the proportions from distorting */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .nav-icon:hover {
@@ -334,4 +335,12 @@ footer {
 
 nav p {
   margin: 10px 0; /* Adjust spacing between the icons */
+}
+
+/* Optional: If you want them in a row instead of a vertical list */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;    /* Adds space between icons */
+  flex-wrap: wrap;
 }
