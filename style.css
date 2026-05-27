@@ -344,3 +344,17 @@ nav {
   gap: 20px;    /* Adds space between icons */
   flex-wrap: wrap;
 }
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.calendar-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+  border: none;
+  border-radius: 16px;
+}
